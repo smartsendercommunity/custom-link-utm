@@ -59,10 +59,6 @@ var ssCustomLink = function (selector, scriptUrl, query = false, params = {})  {
         // configure sending of request
         xhr.open('POST', scriptUrl);
 
-        // setup request header
-        xhr.setRequestHeader("Content-type", "application/json");
-        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-
         // on ready state
         xhr.onreadystatechange = function () {
             // if ready and has success status

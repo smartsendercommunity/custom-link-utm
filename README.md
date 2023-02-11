@@ -11,7 +11,7 @@
 3. Добавьте на страницу Вашего сайта следующий код
 
 <code>
-<a href="https://t.me/namebot?start=custom_link" class="ss-btn">Telegram</a>
+&lt;a href="https://t.me/namebot?start=custom_link" class="ss-btn"&gt;Telegram&lt;/a&gt;
 <script src="https://example.com/dl.js"></script>
 <script>
 ssCustomLink('ss-btn', 'https://example.com/dl.php', true, {

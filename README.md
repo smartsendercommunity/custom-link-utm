@@ -36,3 +36,30 @@ P.S. Строку name: 'value', (переменная и ее значение)
 - на вкладке запрос указать dataId > переменная, в которую сохраняется произвольный параметр https://image.mufiksoft.com/chrome_F3r68wKCOw.jpg
 - на вкладке соответствия указать набор необходимых соответствий согласно передаваемым переменныи из сайта https://image.mufiksoft.com/chrome_fvm5vCABO3.jpg
 - также есть несколько дополнительных значений, которые вычисляются автоматически https://image.mufiksoft.com/chrome_IBx23kXQAJ.jpg https://image.mufiksoft.com/chrome_E7o7Jrnzgl.jpg
+
+
+Если Вы не можете управлять класами ссылок в Вашем редакторе страниц, можно дополнительно добавить на страницу скрипт, который присвоит нужный класс всем ссылкам на боты
+
+<code>
+<script>
+    const links = document.querySelectorAll('a');
+    
+    if( links ) {
+        for( const link of links ) {
+            if (
+                link.href.includes("tg://resolve") || 
+                link.href.includes("https://t.me/") ||
+                link.href.includes("https://direct.smartsender.com/redirect") || 
+                link.href.includes("viber://pa") ||
+                link.href.includes("https://vk.com/app") || 
+                link.href.includes("vk://vk.com/app") ||
+                link.href.includes("https://m.me") ||
+                link.href.includes("https://wa.me") || 
+                link.href.includes("whatsapp://send")
+            ) {
+                link.classList.add('ss-btn');
+            }
+        }
+    }
+</script>
+</code>

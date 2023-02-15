@@ -43,7 +43,6 @@ P.S. Строку name: 'value', (переменная и ее значение)
 <code>
 <script>
     const links = document.querySelectorAll('a');
-    
     if( links ) {
         for( const link of links ) {
             if (

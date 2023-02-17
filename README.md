@@ -11,9 +11,12 @@
 3. Добавьте на страницу Вашего сайта следующий код
 
 -- пример ссылки/кнопки
-&lt;a href="https://t.me/namebot?start=custom_link" class="ss-btn"&gt;Telegram&lt;/a&gt;
+
+<code>&lt;a href="https://t.me/namebot?start=custom_link" class="ss-btn"&gt;Telegram&lt;/a&gt;</code>
+
 
 -- сам код
+
 <code><script src="https://example.com/dl.js"></script>
 <script>
 ssCustomLink('ss-btn', 'https://example.com/dl.php', true, {

@@ -10,17 +10,18 @@
 
 3. Добавьте на страницу Вашего сайта следующий код
 
-<code>
+-- пример ссылки/кнопки
 &lt;a href="https://t.me/namebot?start=custom_link" class="ss-btn"&gt;Telegram&lt;/a&gt;
-<script src="https://example.com/dl.js"></script>
+
+-- сам код
+<code><script src="https://example.com/dl.js"></script>
 <script>
 ssCustomLink('ss-btn', 'https://example.com/dl.php', true, {
 variables: {
 name: 'value',
 }
 });
-</script>
-</code>
+</script></code>
 
 где:
 - https://t.me/namebot?start=custom_link - "Произвольная ссылка" на Ваш бот
@@ -38,9 +39,9 @@ P.S. Строку name: 'value', (переменная и ее значение)
 - также есть несколько дополнительных значений, которые вычисляются автоматически https://image.mufiksoft.com/chrome_IBx23kXQAJ.jpg https://image.mufiksoft.com/chrome_E7o7Jrnzgl.jpg
 
 
-Если Вы не можете управлять класами ссылок в Вашем редакторе страниц, можно дополнительно добавить на страницу скрипт, который присвоит нужный класс всем ссылкам на боты ПЕРЕД основным кодом;
+Если Вы не можете управлять класами ссылок в Вашем редакторе страниц, используйте код ниже (вместо предыдущего). Он сам дополнительно присваивает всем кнопкам мессенджеров дополнительный класс;
 
-<code>
+<code><script src="https://example.com/dl.js"></script>
 <script>
     const links = document.querySelectorAll('a');
     if( links ) {
@@ -61,4 +62,14 @@ P.S. Строку name: 'value', (переменная и ее значение)
         }
     }
 </script>
-</code>
+<script>
+ssCustomLink('ss-btn', 'https://example.com/dl.php', true, {
+variables: {
+name: 'value',
+}
+});
+</script></code>
+
+
+
+ВНИМАНИЕ!!! Код должен находится ниже кнопок по структуре страницы, чтобы на момент его выполнения, кнопки уже были загружены на странице, иначе код не "увидит" этих кнопок

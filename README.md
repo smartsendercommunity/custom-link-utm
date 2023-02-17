@@ -12,7 +12,7 @@
 
 -- пример ссылки/кнопки
 ```
-&lt;a href="https://t.me/namebot?start=custom_link" class="ss-btn"&gt;Telegram&lt;/a&gt;
+<a href="https://t.me/namebot?start=custom_link" class="ss-btn">Telegram</a>
 ```
 
 -- сам код

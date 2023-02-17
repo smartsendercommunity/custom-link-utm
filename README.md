@@ -11,12 +11,12 @@
 3. Добавьте на страницу Вашего сайта следующий код
 
 -- пример ссылки/кнопки
-```
+```html
 <a href="https://t.me/namebot?start=custom_link" class="ss-btn">Telegram</a>
 ```
 
 -- сам код
-```
+```javascript
 <script src="https://example.com/dl.js"></script>
 <script>
 ssCustomLink('ss-btn', 'https://example.com/dl.php', true, {
@@ -45,7 +45,7 @@ P.S. Строку name: 'value', (переменная и ее значение)
 
 Если Вы не можете управлять класами ссылок в Вашем редакторе страниц, используйте код ниже (вместо предыдущего). Он сам дополнительно присваивает всем кнопкам мессенджеров дополнительный класс;
 
-```
+```javascript
 <script src="https://example.com/dl.js"></script>
 <script>
     const links = document.querySelectorAll('a');

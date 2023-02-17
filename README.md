@@ -11,20 +11,21 @@
 3. Добавьте на страницу Вашего сайта следующий код
 
 -- пример ссылки/кнопки
-
-<code>&lt;a href="https://t.me/namebot?start=custom_link" class="ss-btn"&gt;Telegram&lt;/a&gt;</code>
-
+```
+&lt;a href="https://t.me/namebot?start=custom_link" class="ss-btn"&gt;Telegram&lt;/a&gt;
+```
 
 -- сам код
-
-<code><script src="https://example.com/dl.js"></script>
+```
+<script src="https://example.com/dl.js"></script>
 <script>
 ssCustomLink('ss-btn', 'https://example.com/dl.php', true, {
 variables: {
 name: 'value',
 }
 });
-</script></code>
+</script>
+```
 
 где:
 - https://t.me/namebot?start=custom_link - "Произвольная ссылка" на Ваш бот
@@ -44,7 +45,8 @@ P.S. Строку name: 'value', (переменная и ее значение)
 
 Если Вы не можете управлять класами ссылок в Вашем редакторе страниц, используйте код ниже (вместо предыдущего). Он сам дополнительно присваивает всем кнопкам мессенджеров дополнительный класс;
 
-<code><script src="https://example.com/dl.js"></script>
+```
+<script src="https://example.com/dl.js"></script>
 <script>
     const links = document.querySelectorAll('a');
     if( links ) {
@@ -71,7 +73,8 @@ variables: {
 name: 'value',
 }
 });
-</script></code>
+</script>
+```
 
 
 
